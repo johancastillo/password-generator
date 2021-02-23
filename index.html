@@ -14,10 +14,105 @@
     <link rel="stylesheet" href="./icomoon/style.css">
 
     <!-- Styles CSS -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     
+    <div class="contenedor">
+        <div class="logo">
+            <img src="" alt="">
+            <p>Password Generator</p>
+        </div>
+
+        <form id="app" class="app">
+
+            <div class="fila numero-caracteres">
+                <div class="col">
+                    <label for="numero-caracteres">Número de carácteres:</label>
+                </div>
+
+                <div class="col botones">
+                    <div>
+                        <button class="btn" id="btn-menos-uno">
+                            <span class="icon-minus"></span>
+                        </button>
+                    </div>
+
+                    <div>
+                        <input type="text" class="" id="numero-caracteres" readonly value="12">
+                    </div>
+
+                    <div>
+                        <button class="btn" id="btn-mas-uno">
+                            <span class="icon-plus"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fila simbolos">
+                <div class="col">
+                    <label for="simbolos">¿Quiere agregar símbolos?</label>
+                </div>
+
+                <div class="col">
+                    <button class="btn" id="btn-simbolos">
+                        <span class="icon-check"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="fila numeros">
+                <div class="col">
+                    <label for="numeros">¿Quiere agregar números?</label>
+                </div>
+
+                <div class="col">
+                    <button class="btn" id="btn-numeros">
+                        <span class="icon-check"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="fila mayusculas">
+                <div class="col">
+                    <label for="mayusculas">¿Quiere agregar mayusculas?</label>
+                </div>
+
+                <div class="col">
+                    <button class="btn" id="btn-mayusculas">
+                        <span class="icon-check"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="fila generar">
+
+                <div class="col">
+                    <button class="btn btn-generar" id="btn-generar">
+                        Generar
+                        <span class="icon-lock"></span>
+                    </button>
+                </div>
+                
+                <div class="col">
+                    <input type="text" name="" id="input-password" class="input-password" readonly value="ts3GHz">
+                </div>
+
+            </div>
+
+            <!--
+            <div class="fila alerta">
+                <div class="col">
+                    <div class="alerta-copiado" id="alerta-copiado">
+                        <p><span class="icon-copy"></span> Copiado</p>
+                    </div>
+                </div>
+            </div>
+            -->
+
+        </form>
+    </div>
 
     <!-- Scripts -->
     <script src="./js/main.js"></script>
